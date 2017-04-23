@@ -3,6 +3,9 @@
 	width: 750px;
 	margin-left: auto;
 	margin-right: auto;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+
 	
 
 }
@@ -13,9 +16,11 @@ body {
 	color: #A1A0A0;
 	margin-left: auto;
 	margin-right: auto;
-	background-image: url("https://i.ytimg.com/vi/dE_hqjO4iBY/maxresdefault.jpg");
+	background-image: url("https://github.com/paigepittman/giftastic/blob/master/assets/images/maxresdefault.jpg?raw=true");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	font-family: 'Roboto', sans-serif;
+
 }
 
 button {
@@ -29,8 +34,11 @@ button {
 
 h1 {
 
-	color: #A1A0A0;
+	color: red;
 	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 50px;
+
 }
 
 #add-dash {
@@ -49,6 +57,8 @@ h1 {
 	position: relative;
 	left: 30%;
 	margin-top: 20px;
+	color: white;
+	padding-bottom: 30px;
 
 }
 
@@ -71,6 +81,15 @@ h1 {
 	padding-top: 20px;
 	
 
+}
+
+#search-input {
+	color: black;
+}
+
+#buttons {
+
+	margin-top: 50px;
 }
 
 
