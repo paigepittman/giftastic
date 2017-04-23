@@ -26,13 +26,17 @@ function displayGifs() {
 
             var personImage = $("<img>");
 
+            personImage.addClass("giphy");
+
             personImage.attr("src", response.data[i].images.fixed_height_still.url);
 
             gifDiv.prepend(p);
 
             gifDiv.prepend(personImage);
 
-            $("#movies-view").prepend(gifDiv);
+            $("#gif-gallery").prepend(gifDiv);
+
+            $("#item").css("background color", "#A1A0A0");
           }
         });
     };
@@ -41,7 +45,7 @@ function displayGifs() {
 
         // Deleting the movies prior to adding new movies
         // (this is necessary otherwise you will have repeat buttons)
-        $("#buttons-view").empty();
+        $("#buttons").empty();
 
         // Looping through the array of movies
         for (var i = 0; i < person.length; i++) {
@@ -50,21 +54,21 @@ function displayGifs() {
           // This code $("<button>") is all jQuery needs to create the beginning and end tag. (<button></button>)
           var a = $("<button>");
           // Adding a class of movie to our button
-          a.addClass("movie");
+          a.addClass("gif");
           // Adding a data-attribute
           a.attr("data-person", person[i]);
           // Providing the initial button text
           a.text(person[i]);
           // Adding the button to the buttons-view div
-          $("#buttons-view").append(a);
+          $("#buttons").append(a);
         }
       }
 
-       $("#add-movie").on("click", function(event) {
+       $("#add-dash").on("click", function(event) {
 
         event.preventDefault();
         // This line grabs the input from the textbox
-        var newPerson = $("#movie-input").val().trim();
+        var newPerson = $("#search-input").val().trim();
 
         // Adding movie from the textbox to our array
         person.push(newPerson);
@@ -77,6 +81,6 @@ function displayGifs() {
 
        renderButtons();
       // // Adding a click event listener to all elements with a class of "movie"
-      $(document).on("click", ".movie", displayGifs);
+      $(document).on("click", ".gif", displayGifs);
 
     });

@@ -1,0 +1,69 @@
+.container {
+
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #202020;
+
+}
+
+body {
+
+	background-color: #202020;
+	color: #A1A0A0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+button {
+	margin: 3px;
+	color: black;
+	border-radius: 15px;
+	background-color: white;
+	border-color: #202020;
+	border-width: 1px;
+}
+
+h1 {
+
+	color: #A1A0A0;
+	text-align: center;
+}
+
+#add-dash {
+
+	margin: 3px;
+	color: black;
+	border-radius: 15px;
+	background-color: white;
+	border-color: #202020;
+	border-width: 1px;
+
+}
+
+#gif-search {
+
+	position: relative;
+	left: 30%;
+	margin-top: 20px;
+
+}
+
+
+.item {
+
+	max-width: 500px;
+	background-color: #A1A0A0;
+	margin-left: auto;
+	margin-right: auto; 
+	color: black;
+	padding-left: 20px;
+	padding-top: 20px;
+
+}
+
+.giphy {
+
+	position: relative;
+
+}
