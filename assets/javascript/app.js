@@ -28,7 +28,7 @@ function displayGifs() {
 
             personImage.addClass("giphy");
 
-            personImage.attr("src", response.data[i].images.fixed_height_still.url);
+            personImage.attr("src", response.data[i].images.fixed_height.url);
 
             gifDiv.prepend(p);
 

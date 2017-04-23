@@ -3,16 +3,19 @@
 	width: 750px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #202020;
+	
 
 }
 
 body {
 
-	background-color: #202020;
+	background-color: black;
 	color: #A1A0A0;
 	margin-left: auto;
 	margin-right: auto;
+	background-image: url("https://i.ytimg.com/vi/dE_hqjO4iBY/maxresdefault.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 button {
@@ -49,21 +52,27 @@ h1 {
 
 }
 
+.giphy {
+
+	position: relative;
+	
+
+}
+
 
 .item {
 
 	max-width: 500px;
-	background-color: #A1A0A0;
+	background-color: rgba(96, 105, 108, .5);
 	margin-left: auto;
 	margin-right: auto; 
-	color: black;
+	color: white;
 	padding-left: 20px;
 	padding-top: 20px;
+	
 
 }
 
-.giphy {
 
-	position: relative;
 
-}
+
