@@ -28,7 +28,13 @@ function displayGifs() {
 
             personImage.addClass("giphy");
 
-            personImage.attr("src", response.data[i].images.fixed_height.url);
+            personImage.attr("src", response.data[i].images.fixed_height_still.url);
+
+            personImage.attr("data-animate", response.data[i].images.fixed_height.url);
+
+            personImage.attr("data-still", response.data[i].images.fixed_height_still.url);
+
+            personImage.attr("state", "still");
 
             gifDiv.prepend(p);
 
@@ -40,6 +46,33 @@ function displayGifs() {
           }
         });
     };
+
+
+    $(document).on("click", ".giphy", function() {
+      
+      var state = $(this).attr("data-state");
+      var activeurl = $(this).attr("data-animate");
+      var stillurl = $(this).attr("data-still");
+
+      if (state === "still") {
+        console.log(this)
+
+        $(this).attr("data-state", "animate");
+
+        $(this).attr("src", activeurl);
+      }
+
+      else {
+
+        $(this).attr("data-state", "still");
+
+        $(this).attr("src", stillurl);
+
+        console.log(this);
+      
+      }
+
+    });
 
  function renderButtons() {
 
@@ -84,3 +117,5 @@ function displayGifs() {
       $(document).on("click", ".gif", displayGifs);
 
     });
+
+
